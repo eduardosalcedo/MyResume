@@ -13,6 +13,7 @@
 		5B0291712908775100A43DA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B02916F2908775100A43DA0 /* Main.storyboard */; };
 		5B0291732908775200A43DA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B0291722908775200A43DA0 /* Assets.xcassets */; };
 		5B0291762908775200A43DA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0291742908775200A43DA0 /* LaunchScreen.storyboard */; };
+		5BBC36092914614C005E1FDC /* ResumeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BBC36082914614C005E1FDC /* ResumeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		5B0291752908775200A43DA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B0291772908775200A43DA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B02917D290877C600A43DA0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5BBC36082914614C005E1FDC /* ResumeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				5B0291692908775100A43DA0 /* AppDelegate.swift */,
 				5B02916B2908775100A43DA0 /* SceneDelegate.swift */,
 				5B02916D2908775100A43DA0 /* ViewController.swift */,
+				5BBC36082914614C005E1FDC /* ResumeViewController.swift */,
 				5B02916F2908775100A43DA0 /* Main.storyboard */,
 				5B0291722908775200A43DA0 /* Assets.xcassets */,
 				5B0291742908775200A43DA0 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B02916E2908775100A43DA0 /* ViewController.swift in Sources */,
+				5BBC36092914614C005E1FDC /* ResumeViewController.swift in Sources */,
 				5B02916A2908775100A43DA0 /* AppDelegate.swift in Sources */,
 				5B02916C2908775100A43DA0 /* SceneDelegate.swift in Sources */,
 			);

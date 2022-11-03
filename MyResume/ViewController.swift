@@ -6,8 +6,9 @@
 //
 
 import UIKit
+import SafariServices //to add SFSafariViewControllerDelegate below
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SFSafariViewControllerDelegate {
 
     // MARK: - IB Outlets
     
@@ -34,9 +35,25 @@ class ViewController: UIViewController {
         // "tel:// = URL scheme - used to access the telephone and access this value
     }
     
+    @IBAction func skillsButtonTapped(_ sender: Any) {
+        showWebPage()
+    }
     
     
     //MARK: - Instance Methods
-
+    func showWebPage() {
+        // create a constant that will store a student's webpage or blog or portfolio as a string.
+        let urlString = "https://www.swiftteacher.org"
+        
+        if let url = URL(string: urlString) {
+            let config = SFSafariViewController.Configuration()
+            config.entersReaderIfAvailable = true
+            
+            let view = SFSafariViewController(url: url, configuration: config)
+            view.delegate = self
+            present(view, animated: true)
+        }
+    }
+    
 }
 

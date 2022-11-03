@@ -40,12 +40,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Skills"/>
+                                <connections>
+                                    <action selector="callMeButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8ih-dU-PDx"/>
+                                    <action selector="skillsButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cAU-zB-3FD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="weE-T4-05f">
                                 <rect key="frame" x="216" y="693" width="109" height="35"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Experience"/>
+                                <connections>
+                                    <segue destination="OvB-sF-S9D" kind="show" id="tH7-CW-tPe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNK-Tx-ve5">
                                 <rect key="frame" x="147" y="595" width="81" height="35"/>
@@ -65,9 +72,25 @@
             </objects>
             <point key="canvasLocation" x="101.53846153846153" y="3.5545023696682461"/>
         </scene>
+        <!--Resume View Controller-->
+        <scene sceneID="k4k-eM-gIO">
+            <objects>
+                <viewController id="OvB-sF-S9D" customClass="ResumeViewController" customModule="MyResume" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B10-BP-IWf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="755"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wva-VS-fiZ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ahV-w2-VKL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1B-9e-Vtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="3"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Portrait" width="792" height="612"/>
+        <image name="Portrait" width="2521" height="2648"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
