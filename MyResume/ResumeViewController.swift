@@ -19,6 +19,11 @@ class ResumeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Eduardo Salcedo"
+        navigationController?.navigationBar.prefersLargeTitles = false
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareTapped))
+        
         // we need to set this to false or pdf may not show in the view
         pdfView.translatesAutoresizingMaskIntoConstraints = false // makes it fit
         // add the pdf view to the view
@@ -37,5 +42,17 @@ class ResumeViewController: UIViewController {
         pdfView.frame = view.bounds
     }
 
+    //MARK: - Instance Methods
+    // An Objective-C function that will be called when the share button is tapped
+    @objc func shareTapped() {
+        guard let document = resume else { return }
+        // creates the view that loads the array of item(s) to be shared - in this case, your resume
+        let view = UIActivityViewController(activityItems: [document], applicationActivities: [])
+        // show our view as a popover from the right bar button item (above, line 25)
+        view.popoverPresentationController?.barButtonItem = navigationItem.backBarButtonItem
+        
+        // present the view when the share button is tapped
+        present(view, animated: true)
+    }
 
 }

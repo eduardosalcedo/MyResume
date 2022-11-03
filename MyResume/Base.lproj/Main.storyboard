@@ -51,7 +51,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Experience"/>
                                 <connections>
-                                    <segue destination="OvB-sF-S9D" kind="show" id="tH7-CW-tPe"/>
+                                    <segue destination="rdZ-b7-qXd" kind="show" id="tH7-CW-tPe"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNK-Tx-ve5">
@@ -86,7 +86,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y1B-9e-Vtk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1052" y="3"/>
+            <point key="canvasLocation" x="1994.4000000000001" y="2.9556650246305418"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gNZ-o7-8fI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rdZ-b7-qXd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="oUm-mb-GV9"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Wix-41-YGC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="OvB-sF-S9D" kind="relationship" relationship="rootViewController" id="qIT-bG-M9U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Efj-4i-NcS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="2.9556650246305418"/>
         </scene>
     </scenes>
     <resources>
